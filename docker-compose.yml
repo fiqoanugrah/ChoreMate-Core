@@ -24,7 +24,7 @@ services:
       replicas: 2
       update_config:
         parallelism: 1
-        order: rolling-update
+        order: stop-first
     environment:
       NODE_ENV: production
       PORT: 8000
